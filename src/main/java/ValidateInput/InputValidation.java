@@ -8,7 +8,6 @@ public class InputValidation {
             return true;
         }
         catch (Exception ex){
-            System.out.println("Not a valid Input. try again!");
             return false;
         }
 }
@@ -18,7 +17,6 @@ public class InputValidation {
             return true;
         }
         catch (Exception ex){
-            System.out.println("Not a valid Input. try again!");
             return false;
         }
     }

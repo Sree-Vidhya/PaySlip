@@ -15,13 +15,12 @@ public class PaySlipCalculator {
         boolean checkSuper;
         StringBuilder stringBuilder = new StringBuilder();
         System.out.println();
-        System.out.println("Welcome to the payslip generator! ");
-        System.out.println();
         String firstName = input.firstName();
         String lastName = input.lastName();
         String salary = input.salary();
         checkSalary = validate.isSalaryValid(salary);
         while (!checkSalary){
+            System.out.println("Not a valid Input. try again!");
             salary = input.salary();
             checkSalary = validate.isSalaryValid(salary);
         }
@@ -30,6 +29,7 @@ public class PaySlipCalculator {
         String Super = input.superRate();
         checkSuper = validate.isSuperValid(Super);
         while (!checkSuper){
+            System.out.println("Not a valid Input. try again!");
            Super = input.superRate();
            checkSuper = validate.isSuperValid(Super);
         }
