@@ -14,7 +14,6 @@ public class PaySlipCalculatorTest {
     public void payslipCalculator() {
         InterfaceInput interfaceInput = new MockInput();
         PaySlipCalculator paySlipCalculator = new PaySlipCalculator(interfaceInput);
-        System.out.println(paySlipCalculator.payslipCalculator());
         assertEquals("Your payslip has been generated:\n" +
                 "Name: John  Doe\n" +
                 "Pay period: 1 March - 31 March\n" +

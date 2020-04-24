@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OutputTest.ConsoleOutputTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-24T03:44:38" hostname="C02Y32E2JG5J" time="0.006">
+<testsuite name="OutputTest.ConsoleOutputTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-24T04:14:29" hostname="C02Y32E2JG5J" time="0.007">
   <properties/>
-  <testcase name="display" classname="OutputTest.ConsoleOutputTest" time="0.006"/>
+  <testcase name="display" classname="OutputTest.ConsoleOutputTest" time="0.007"/>
   <system-out><![CDATA[
-Welcome to the payslip generator! 
 
-
-Your payslip has been generated:
-Name: John  Doe
-Pay period: 1 March - 31 March
-Gross Income: 5004.0
-Income Tax: 922.0
-Net Income: 4082.0
-Super: 450.0
-Thank you for using MYOB!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

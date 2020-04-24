@@ -9,8 +9,8 @@ public class ConsoleOutput implements InterfaceOutput {
     public ConsoleOutput(InterfaceInput interfaceInput) {
         this.interfaceInput = interfaceInput;
     }
-    public void display(){
+    public String display(){
         PaySlipCalculator paySlipCalculator = new PaySlipCalculator(interfaceInput);
-        System.out.println(paySlipCalculator.payslipCalculator());
+        return paySlipCalculator.payslipCalculator();
     }
 }
