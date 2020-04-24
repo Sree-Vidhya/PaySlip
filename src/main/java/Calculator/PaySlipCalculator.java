@@ -1,17 +1,18 @@
 package Calculator;
-
-import Input.ConsoleInput;
 import Input.InterfaceInput;
 import ValidateInput.InputValidation;
 
 public class PaySlipCalculator {
-    InterfaceInput input = new ConsoleInput();
-    InputValidation validate = new InputValidation();
-    GrossIncomeCalculator grossIncome = new GrossIncomeCalculator();
-    boolean checkSalary;
-    boolean checkSuper;
+    private InterfaceInput input;
+    private InputValidation validate = new InputValidation();
+    private GrossIncomeCalculator grossIncome = new GrossIncomeCalculator();
 
+    public PaySlipCalculator(InterfaceInput input) {
+        this.input = input;
+    }
     public String payslipCalculator(){
+        boolean checkSalary;
+        boolean checkSuper;
         StringBuilder stringBuilder = new StringBuilder();
         System.out.println();
         System.out.println("Welcome to the payslip generator! ");
@@ -38,24 +39,16 @@ public class PaySlipCalculator {
         System.out.println();
 
         IncomeTaxCalculator incomeTax = new IncomeTaxCalculator(annualIncome);
-
         NetIncomeCalculator netIncome = new NetIncomeCalculator(grossIncome,annualIncome);
-
         SuperCalculator superCalc = new SuperCalculator(grossIncome,inputSuperRate);
-
         stringBuilder.append("Your payslip has been generated:\n");
-        stringBuilder.append("Name: "+firstName+" "+lastName+"\n");
-        stringBuilder.append("Pay period: "+startDate+" - "+endDate+"\n");
-        stringBuilder.append("Gross Income: "+grossIncome.calcGrossIncome(annualIncome)+"\n");
-        stringBuilder.append("Income Tax: "+incomeTax.calcIncomeTax()+"\n");
-        stringBuilder.append("Net Income: "+netIncome.calcNetIncome()+"\n");
-        stringBuilder.append("Super: "+superCalc.calcSuperRate(annualIncome)+"\n");
+        stringBuilder.append("Name: ").append(firstName).append(" ").append(lastName).append("\n");
+        stringBuilder.append("Pay period: ").append(startDate).append(" - ").append(endDate).append("\n");
+        stringBuilder.append("Gross Income: ").append(grossIncome.calcGrossIncome(annualIncome)).append("\n");
+        stringBuilder.append("Income Tax: ").append(incomeTax.calcIncomeTax()).append("\n");
+        stringBuilder.append("Net Income: ").append(netIncome.calcNetIncome()).append("\n");
+        stringBuilder.append("Super: ").append(superCalc.calcSuperRate(annualIncome)).append("\n");
         stringBuilder.append("Thank you for using MYOB!");
         return stringBuilder.toString();
-    }
-
-    public static void main(String[] args) {
-        PaySlipCalculator paySlipCalculator = new PaySlipCalculator();
-        System.out.println(paySlipCalculator.payslipCalculator());
     }
 }

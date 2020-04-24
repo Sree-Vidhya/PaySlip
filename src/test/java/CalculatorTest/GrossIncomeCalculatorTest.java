@@ -1,4 +1,4 @@
-package ProcessTest;
+package CalculatorTest;
 
 import org.junit.Test;
 import Calculator.GrossIncomeCalculator;
