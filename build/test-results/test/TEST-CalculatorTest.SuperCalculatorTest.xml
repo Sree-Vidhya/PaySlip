@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CalculatorTest.SuperCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-24T03:44:38" hostname="C02Y32E2JG5J" time="0.0">
+  <properties/>
+  <testcase name="calcSuperRate" classname="CalculatorTest.SuperCalculatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
