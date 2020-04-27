@@ -14,7 +14,6 @@ public class PaySlipCalculator {
         boolean checkSalary;
         boolean checkSuper;
         StringBuilder stringBuilder = new StringBuilder();
-        System.out.println();
         String firstName = input.firstName();
         String lastName = input.lastName();
         String salary = input.salary();
