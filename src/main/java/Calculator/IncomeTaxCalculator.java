@@ -1,10 +1,10 @@
 package Calculator;
 
 public class IncomeTaxCalculator {
-    double salary;
-    double extra_cents;
-    double base_salary;
-    double base_tax;
+    private double salary;
+    private double extra_cents;
+    private double base_salary;
+    private double base_tax;
 
     public IncomeTaxCalculator(double salary) {
         this.salary = salary;

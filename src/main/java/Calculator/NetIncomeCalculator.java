@@ -1,9 +1,9 @@
 package Calculator;
 
 public class NetIncomeCalculator {
-    IncomeTaxCalculator taxCalculator;
-    GrossIncomeCalculator grossIncomeCalculator;
-    double salary;
+    private IncomeTaxCalculator taxCalculator;
+    private GrossIncomeCalculator grossIncomeCalculator;
+    private double salary;
 
     public NetIncomeCalculator(GrossIncomeCalculator grossIncomeCalculator, double salary) {
         this.grossIncomeCalculator = grossIncomeCalculator;

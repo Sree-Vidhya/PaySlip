@@ -7,7 +7,6 @@ import static org.junit.Assert.assertEquals;
 
 public class SuperCalculatorTest {
 
-
     @Test
     public void calcSuperRate() {
         GrossIncomeCalculator grossIncomeCalculator = new GrossIncomeCalculator();
