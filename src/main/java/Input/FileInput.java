@@ -7,12 +7,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class FileInput implements InterfaceInput {
-    List<String> fileContent = new ArrayList<>();
+    private List<String> fileContent = new ArrayList<>();
 
     public void readFile() throws FileNotFoundException{
-        Scanner input = new Scanner(System.in);
-        int i = 0;
-        int j = 0;
         System.out.println("Try a sample file");
         FileReader samplefile = null;
         samplefile = new FileReader("/Users/sree.vidhya/SecondPart/PaySlip/InputFile");

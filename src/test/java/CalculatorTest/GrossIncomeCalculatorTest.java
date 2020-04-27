@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 
 public class GrossIncomeCalculatorTest {
-    GrossIncomeCalculator grossIncomeCalculator = new GrossIncomeCalculator();
+    private GrossIncomeCalculator grossIncomeCalculator = new GrossIncomeCalculator();
     @Test
     public void calcGrossIncome() {
         double actual = grossIncomeCalculator.calcGrossIncome(12000);

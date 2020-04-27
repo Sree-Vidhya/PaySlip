@@ -6,7 +6,7 @@ import Calculator.IncomeTaxCalculator;
 import static org.junit.Assert.assertEquals;
 
 public class IncomeTaxCalculatorTest {
-    IncomeTaxCalculator taxCalculator = new IncomeTaxCalculator(60050);
+    private IncomeTaxCalculator taxCalculator = new IncomeTaxCalculator(60050);
     @Test
     public void calcIncomeTax() {
         double actual = taxCalculator.calcIncomeTax();

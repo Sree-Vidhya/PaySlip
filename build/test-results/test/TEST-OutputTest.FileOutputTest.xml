@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OutputTest.FileOutputTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-27T04:31:28" hostname="C02Y32E2JG5J" time="0.239">
+<testsuite name="OutputTest.FileOutputTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-27T04:42:17" hostname="C02Y32E2JG5J" time="0.244">
   <properties/>
-  <testcase name="displayOutputTest" classname="OutputTest.FileOutputTest" time="0.239"/>
+  <testcase name="displayOutputTest" classname="OutputTest.FileOutputTest" time="0.244"/>
   <system-out><![CDATA[Try a sample file
 
 ]]></system-out>
